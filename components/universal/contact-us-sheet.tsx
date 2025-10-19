@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sheet, SheetContent } from '../ui/sheet'
+import { Sheet, SheetContent, SheetDescription, SheetTitle } from '../ui/sheet'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { useForm } from 'react-hook-form'
@@ -29,13 +29,9 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
     const onSubmit = async (data: FormData) => {
         try {
             console.log('Form submitted:', data)
-            // Here you would typically send the data to your API
-            // await submitContactForm(data)
 
-            // Reset form after successful submission
             reset()
 
-            // Close the sheet
             onOpenChange()
         } catch (error) {
             console.error('Error submitting form:', error)
@@ -44,7 +40,9 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
 
     return (
         <Sheet open={isOpen} onOpenChange={onOpenChange}>
-            <SheetContent className='w-full md:max-w-[50vw] p-6 overflow-y-auto'>
+            <SheetContent className='w-full md:max-w-[50vw] p-10 overflow-y-auto' aria-describedby='contact-us-form'>
+                <SheetTitle className='sr-only'>Contact Us Form</SheetTitle>
+                <SheetDescription className='sr-only'>Contact Us Form</SheetDescription>
                 <div className="flex justify-between items-start mb-6">
                     <div className='max-w-[450px]'>
                         <h2 className="text-xl text-gray-900 mb-2 font-normal">
@@ -54,11 +52,11 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
                 </div>
 
                 <div className="mb-8">
-                    <h3 className="text-lg font-[402] text-gray-900 mb-4">Get in Touch</h3>
-                    <div className="space-y-2 text-sm text-gray-600">
-                        <p><span className="font-medium">Email:</span> contact@royaldynastyhomes.com</p>
-                        <p><span className="font-medium">Office Address:</span> 77, Oduduwa Way, Ikeja GRA Lagos.</p>
-                        <p><span className="font-medium">Phone:</span> +234-806 757 2686</p>
+                    <h3 className="text-base font-[402] text-black">Get in Touch</h3>
+                    <div className="space-y-2 text-base text-gray-600">
+                        <p><span className="font-[402]">Email:</span> contact@royaldynastyhomes.com</p>
+                        <p><span className="font-[402]">Office Address:</span> 77, Oduduwa Way, Ikeja GRA Lagos.</p>
+                        <p><span className="font-[402]">Phone:</span> +234-806 757 2686</p>
                     </div>
                 </div>
 
@@ -131,7 +129,7 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
 
                     <button
                         type="submit"
-                        disabled={isSubmitting}                    >
+                        disabled={isSubmitting}>
                         {isSubmitting ? 'Submitting...' : 'Submit'}
                     </button>
                 </form>
