@@ -44,7 +44,7 @@ export default function OurServicesSection() {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <motion.div variants={fadeInUpVariants} className='flex justify-end mb-10'>
-                        <h3 className='text-xl font-normal leading-[120%] md:text-[40px] max-w-[630px]'>Our Services</h3>
+                        <h3 className='text-xl font-normal leading-[120%] md:text-[40px] max-w-[630px] uppercase'>Our Services</h3>
                     </motion.div>
 
                     {/* MOBILE  */}
