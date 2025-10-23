@@ -1,71 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Container from '../universal/container'
-import { containerVariants, fadeInUpVariants } from '@/lib/animation'
+import { containerVariants, fadeInUpVariants, featureItemVariants, featuresContainerVariants, imageVariants, textVariants } from '@/lib/animation'
 import Image from 'next/image'
 
 export default function FlagshipFeatures() {
-    const imageVariants = {
-        hidden: {
-            opacity: 0,
-            scale: 0.9,
-            y: 50
-        },
-        visible: {
-            opacity: 1,
-            scale: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-                ease: [0.6, -0.05, 0.01, 0.99] as const
-            }
-        }
-    }
-
-    const featuresContainerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.3
-            }
-        }
-    }
-
-    const featureItemVariants = {
-        hidden: {
-            opacity: 0,
-            x: -30,
-            y: 20
-        },
-        visible: {
-            opacity: 1,
-            x: 0,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: [0.6, -0.05, 0.01, 0.99] as const
-            }
-        }
-    }
-
-    const textVariants = {
-        hidden: {
-            opacity: 0,
-            y: 40
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-                ease: [0.6, -0.05, 0.01, 0.99] as const,
-                delay: 0.4
-            }
-        }
-    }
-
     const flagshipFeatures = [
         "Fully furnished student rooms with ensuite bathrooms",
         "Reliable water, power, and high-speed internet access",

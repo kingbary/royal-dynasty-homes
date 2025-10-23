@@ -43,7 +43,7 @@ export default function NavBar() {
                                         <span className={`opacity-0 group-hover:opacity-100 ${isActive('') ? 'text-white' : 'text-black'}`}>{'['}</span>
                                         <Link
                                             href={link.route === '' ? '/' : `/${link.route}`}
-                                            className={`flex items-center gap-1 px-1 py-2.5 transition-colors duration-200 ${isActive('')
+                                            className={`flex items-center gap-1 px-1 py-1 transition-colors duration-200 ${isActive('')
                                                 ? 'text-white'
                                                 : 'text-black'
                                                 }`}
