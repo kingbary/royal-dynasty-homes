@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import ContactUsSheet from './contact-us-sheet'
+import Image from 'next/image'
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState<boolean>(false)
@@ -24,7 +25,11 @@ export default function NavBar() {
             <Container>
                 <div className='flex justify-between md:items-center'>
                     <Link href={'/'}>
-                        <Logo />
+                        {isActive('') ? (
+                            <Logo />
+                        ) : (
+                            <Image src={'/images/logo-blue.svg'} width={186} height={80} className='w-[111px]' alt='Royal Dynasty Homes Logo' />
+                        )}
                     </Link>
                     <motion.ul className="flex flex-col space-x-1 md:space-x-8 md:flex-row">
                         {
@@ -35,20 +40,20 @@ export default function NavBar() {
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.6, delay: 0.4 }}
                                         className='group flex items-center'>
-                                        <span className='text-white opacity-0 group-hover:opacity-100'>{'['}</span>
+                                        <span className={`opacity-0 group-hover:opacity-100 ${isActive('') ? 'text-white' : 'text-black'}`}>{'['}</span>
                                         <Link
                                             href={link.route === '' ? '/' : `/${link.route}`}
-                                            className={`flex items-center gap-1 px-1 py-2.5 text-white transition-colors duration-200 ${isActive(link.route)
-                                                ? ''
-                                                : ''
+                                            className={`flex items-center gap-1 px-1 py-2.5 transition-colors duration-200 ${isActive('')
+                                                ? 'text-white'
+                                                : 'text-black'
                                                 }`}
                                         >
                                             {isActive(link.route) && (
-                                                <div className='-ml-2 size-1.5 bg-white group-hover:hidden'></div>
+                                                <div className={`-ml-2 size-1.5 ${isActive('') ? 'bg-white' : 'bg-blac'} group-hover:hidden`}></div>
                                             )}
                                             {link.name}
                                         </Link>
-                                        <span className='text-white opacity-0 group-hover:opacity-100'>{']'}</span>
+                                        <span className={`opacity-0 group-hover:opacity-100 ${isActive('') ? 'text-white' : 'text-black'}`}>{']'}</span>
                                     </motion.li>
                                 )
                             })
@@ -58,14 +63,14 @@ export default function NavBar() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className='group flex items-center'>
-                            <span className='text-white opacity-0 group-hover:opacity-100'>{'['}</span>
+                            <span className={`opacity-0 group-hover:opacity-100 ${isActive('') ? 'text-white' : 'text-black'}`}>{'['}</span>
                             <button
                                 onClick={() => setIsOpen(true)}
-                                className='flex items-center gap-1 px-1 py-2.5 text-white transition-colors duration-200'
+                                className={`flex items-center gap-1 px-1 py-2.5 ${isActive('') ? 'text-white' : 'text-black'} transition-colors duration-200`}
                             >
                                 Contact Us
                             </button>
-                            <span className='text-white opacity-0 group-hover:opacity-100'>{']'}</span>
+                            <span className={`opacity-0 group-hover:opacity-100 ${isActive('') ? 'text-white' : 'text-black'}`}>{']'}</span>
                         </motion.li>
                     </motion.ul>
                 </div>
