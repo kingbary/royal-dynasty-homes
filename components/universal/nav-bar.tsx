@@ -49,7 +49,7 @@ export default function NavBar() {
                                                 }`}
                                         >
                                             {isActive(link.route) && (
-                                                <div className={`-ml-2 size-1.5 ${isActive('') ? 'bg-white' : 'bg-blac'} group-hover:hidden`}></div>
+                                                <div className={`-ml-2 size-1.5 ${isActive('') ? 'bg-white' : 'bg-black'} group-hover:hidden`}></div>
                                             )}
                                             {link.name}
                                         </Link>

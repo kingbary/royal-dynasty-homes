@@ -47,7 +47,7 @@ export default function Footer() {
                                                     }`}
                                             >
                                                 {isActive(link.route) && (
-                                                    <div className='-ml-2 size-1.5 bg-black'></div>
+                                                    <div className='-ml-2 size-1.5 bg-black group-hover:hidden'></div>
                                                 )}
                                                 {link.name}
                                             </Link>
