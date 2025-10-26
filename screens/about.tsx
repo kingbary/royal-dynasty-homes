@@ -23,12 +23,12 @@ export default function AboutPage() {
             <Container>
                 <div>
                     <motion.h1
-                        className='text-[#1A2C6B] text-[30px] md:text-6xl lg:text-[110px] text-center'
+                        className='text-[#1A2C6B] text-2xl sm:text-4xl md:text-6xl lg:text-[90px] font-medium text-center'
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0 }}
                     >
-                        Royal Dynasty Homes Ltd
+                        The Royal Dynasty Homes Ltd
                     </motion.h1>
                     <motion.div
                         className="flex flex-col gap-2.5 w-full py-2.5 justify-between text-[#000000B2] md:flex-row"
