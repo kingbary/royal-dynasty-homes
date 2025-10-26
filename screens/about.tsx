@@ -116,7 +116,7 @@ export default function AboutPage() {
                     <div className='flex flex-col'>
                         <h3 className='text-xl md:text-2xl uppercase font-medium'>Our Vision</h3>
                         <div className='max-w-[423px]'>
-                            <p className='md:text-xl'>To be Nigeria’s most trusted name in student real estate development, delivering world-class living experiences that promote well-being, security, and academic performance</p>
+                            <p className='md:text-xl'>To be Nigeria’s Top Tier name in Educational Institutions real estate development, delivering state of the heart, world-class living experiences standards.</p>
                         </div>
                     </div>
                     <div className='flex flex-col'>

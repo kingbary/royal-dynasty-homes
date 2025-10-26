@@ -34,7 +34,7 @@ export default function OurStorySection() {
             ]
         },
         {
-            name: 'Partnerships',
+            name: 'Regulatory Bodies',
             content: [
                 {
                     institutionName: "UNILAG",

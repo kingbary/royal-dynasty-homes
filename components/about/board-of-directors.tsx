@@ -70,24 +70,66 @@ export default function BoardOfDirectors() {
             </div>)
         },
         {
-            name: 'Mr. Niyi Tanimola', position: 'Project Director', imgUrl: '/images/board-of-directors/niyi-tanimola.webp',
+            name: 'Mr. Niyi Tanimola', position: 'Director/Legal Adviser.', imgUrl: '/images/board-of-directors/niyi-tanimola.webp',
             bio: (<div className='pb-12'>
                 <div className='space-y-1'>
                     <h3 className='text-3xl font-medium uppercase'>MR. Niyi Tanimola</h3>
-                    <p className='text-[#000000B2] font-medium'>Project Director</p>
+                    <p className='text-[#000000B2] font-medium'>Director/Legal Adviser.</p>
                 </div>
                 <div className='mt-10'>
-                    <p>With over 30 years of experience in architecture, urban planning, and large-scale estate development, Mr. Tanimola leads the technical design and project execution arm of Royal Dynasty Homes. He is the MD of Archi-Plus Consult and a Managing Partner at Tanimola Aribisala & Co.
+                    <p>Niyi is in full time professional consultancy
+                        practice in Architecture, Urban and Regional
+                        Planning with full participation in building
+                        construction. He holds a Diploma in
+                        Architecture and Masters Degree in Urban and
+                        Regional Planning  with over four decades of
+                        post qualifiication experience. Also registered
+                        with relevant professional bodies in the
+                        building industry including project
+                        management certification.He started his
+                        professional career  as a graduate Architect in
+                        1983 with M/S STUDIO ALKO CONSULTANTS , a
+                        consortium of leading Architects and Engineers
+                        in Ibadan on the execution of the permanent
+                        site for African  Regional Centre for
+                        Engineering Design & Manufacturing ARCEDEM
+                        (a United Nations Project)1983-June 1986.
+                        Thereafter, he joined AFOLABI KUKU
+                        ASSOCIATES (1986-1995) in Lagos on various
+                        projects ranging from Residential buildings,
+                        Mixed use, Commercial to Institutional
+                        developments.
+                        <br />
+                        He is currently the Managing Director of Archi-Plus
+                        Consult Ltd.(1995 to date), a registered company
+                        involved with remodeling, renovation and full
+                        construction works. He doubles as the Managing
+                        Partner of Tanimola Aribisala & Co.(2008 to date),
+                        a solely consultancy outfit in the area of
+                        Architecture, Urban & Regional Planning, Project
+                        Management, Geo Information Systems,
+                        Development and Environmental Management
+                        Services. Both outfits have handled various works
+                        from bespoke Residential buildings, to large scale
+                        Residential  Estate developments, Joint Venture
+                        developments,  Commercial and Institutional
+                        projects spread across the country with passion
+                        for details and excellent project delivery.
+                        <br />
+                        Niyi,  manages the Lagos business office of the
+                        firm and also serves as Director in several other
+                        firms in addition to volunteering services to other
+                        humanitarian organizations.
                     </p>
                 </div>
             </div>)
         },
         {
-            name: 'Mr. Oluwakayode Adigun', position: 'Finance Director', imgUrl: '/images/board-of-directors/oluwakayode-adigun.webp',
+            name: 'Mr. Oluwakayode Adigun', position: 'Director, Strategy and Finance', imgUrl: '/images/board-of-directors/oluwakayode-adigun.webp',
             bio: (<div className='pb-12'>
                 <div className='space-y-1'>
                     <h3 className='text-3xl font-medium uppercase'>MR. Oluwakayode Adigun</h3>
-                    <p className='text-[#000000B2] font-medium'>Finance Director</p>
+                    <p className='text-[#000000B2] font-medium'>Director, Strategy and Finance</p>
                 </div>
                 <div className='mt-10'>
                     <p>Oluwakayode Adigun is a transformative leader whose career has spanned banking and financial services across Nigeria, South Africa, and beyond. He has a strong record of managing diverse teams in service, operations, and technology, and a natural talent for driving growth and streamlining processes to achieve real, lasting change.
@@ -124,7 +166,7 @@ export default function BoardOfDirectors() {
             bio: (<div className='pb-12'>
                 <div className='space-y-1'>
                     <h3 className='text-3xl font-medium uppercase'>MR. ADEWALE LASEINDE</h3>
-                    <p className='text-[#000000B2] font-medium'>Project Director</p>
+                    <p className='text-[#000000B2] font-medium'>Director/Legal Adviser</p>
                 </div>
                 <div className='mt-10'>
                     <p>Mr. Laseinde is a versatile professional with more than thirty-seven (37) years experience in Corporate and Commercial law practice, Transactional Services, Contracts, Insolvency, Infrastructure Development, Real Estate, Construction Law, Intellectual Property, Data Protection & Compliance, Company Secretarial and General Legal Advisory Services, with competencies in litigation, and Alternative Dispute Resolution including negotiation, mediation, and arbitration. He is a Corporate Governance, Regulatory and Compliance professional.

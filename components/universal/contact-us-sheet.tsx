@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetDescription, SheetTitle } from '../ui/sheet'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 
 type FormData = {
     fullName: string
@@ -29,9 +30,8 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
     const onSubmit = async (data: FormData) => {
         try {
             console.log('Form submitted:', data)
-
             reset()
-
+            toast.success('Thank you! Your message has been sent. We’ll be in touch soon.')
             onOpenChange()
         } catch (error) {
             console.error('Error submitting form:', error)
@@ -40,13 +40,13 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
 
     return (
         <Sheet open={isOpen} onOpenChange={onOpenChange}>
-            <SheetContent className='w-full md:max-w-[50vw] p-10 overflow-y-auto' aria-describedby='contact-us-form'>
+            <SheetContent className='w-full md:max-w-[50vw] px-4 py-16 md:px-10 overflow-y-auto' aria-describedby='contact-us-form'>
                 <SheetTitle className='sr-only'>Contact Us Form</SheetTitle>
                 <SheetDescription className='sr-only'>Contact Us Form</SheetDescription>
                 <div className="flex justify-between items-start mb-6">
                     <div className='max-w-[450px]'>
                         <h2 className="text-xl text-gray-900 mb-2 font-normal">
-                            We're here to help you answer questions<br /> about our properties, or assist with partnership<br /> opportunities.
+                            We’re here to help you answer questions about our properties, or assist with partnership opportunities.
                         </h2>
                     </div>
                 </div>
@@ -127,10 +127,14 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
                         )}
                     </div>
 
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}>
-                        {isSubmitting ? 'Submitting...' : 'Submit'}
+                    <button type='submit' className='group flex items-center font-medium'>
+                        <span className='opacity-0 group-hover:opacity-100 font-medium'>{'['}</span>
+                        <span
+                            className={`flex items-center gap-1 px-1 py-2.5 text-black`}
+                        >
+                            {isSubmitting ? 'Submitting...' : 'Submit'}
+                        </span>
+                        <span className='opacity-0 group-hover:opacity-100 font-medium'>{']'}</span>
                     </button>
                 </form>
             </SheetContent>

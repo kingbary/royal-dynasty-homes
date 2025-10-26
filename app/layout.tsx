@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/universal/nav-bar";
 import Footer from "@/components/footer";
+import { Toaster } from "sonner";
 
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased" >
+        <Toaster position="top-right" richColors />
         <NavBar />
         {children}
         <Footer />

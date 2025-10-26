@@ -72,7 +72,7 @@ function SheetContent({
         {...props}
       >
         {children}
-        <SheetPrimitive.Close className="group ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-[50px] right-14 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
+        <SheetPrimitive.Close className="group ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-5 right-5 md:top-[50px] md:right-14 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
           <span className='text-black opacity-0 group-hover:opacity-100 mr-1'>{'['}</span>
           <span className="">Close</span>
           <span className='text-black opacity-0 group-hover:opacity-100 ml-1'>{']'}</span>

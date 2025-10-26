@@ -26,7 +26,7 @@ export default function NavBar() {
                 <div className='flex justify-between md:items-center'>
                     <Link href={'/'}>
                         {isActive('') ? (
-                            <Logo />
+                            <Image src={'/images/logo-white.svg'} width={186} height={80} className='w-[111px]' alt='Royal Dynasty Homes Logo' />
                         ) : (
                             <Image src={'/images/logo-blue.svg'} width={186} height={80} className='w-[111px]' alt='Royal Dynasty Homes Logo' />
                         )}

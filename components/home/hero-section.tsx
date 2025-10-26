@@ -8,19 +8,16 @@ export default function HeroSection() {
 
     const slides = [
         {
-            image: "/images/hero-bg-1.webp",
-            title: "Royal Dynasty Homes",
-            description: "Welcome to Royal Dynasty Homes, where we create exceptional living spaces that blend luxury with comfort."
+            image: "/images/building-img.webp",
+            description: "The Royal Dynasty Homes merge unwavering architectural integrity with refined urban planning."
         },
         {
-            image: "/images/hero-bg-2.webp",
-            title: "Luxury Living Redefined",
-            description: "Experience the pinnacle of luxury with our carefully crafted homes designed for modern living."
+            image: "/images/wema-bank.webp",
+            description: "Stability that inspires ambition. Experience a foundation built for your future."
         },
         {
-            image: "/images/hero-bg-3.webp",
-            title: "Your Dream Home Awaits",
-            description: "From concept to completion, we build homes that reflect your unique style and aspirations."
+            image: "/images/projects/cornerstone-baptist-church-1.webp",
+            description: "Crafted for endurance. Designed for life. Uncompromising quality in every thoughtful detail."
         }
     ]
 
@@ -85,27 +82,29 @@ export default function HeroSection() {
                     </motion.div>
                 </Container>
             </div>
+            {slides.map((slide, index) => (
+                <div key={index} className='absolute w-full bottom-20'>
+                    <Container>
+                        <div className='max-w-[844px]'>
+                            <motion.h1
+                                className='text-[32px] md:text-5xl text-white leading-[120%] font-normal transition-all duration-1000 ease-in-out'
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 1,
+                                    delay: 1,
+                                    type: "spring",
+                                    stiffness: 100,
+                                    damping: 20
+                                }}
+                            >
+                                {index === currentSlide && slide.description}
+                            </motion.h1>
+                        </div>
+                    </Container>
+                </div>
+            ))}
 
-            <div className='absolute w-full  bottom-20'>
-                <Container>
-                    <div className='max-w-[844px]'>
-                        <motion.h1
-                            className='text-[32px] md:text-5xl text-white leading-[120%] font-normal'
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 1,
-                                delay: 1,
-                                type: "spring",
-                                stiffness: 100,
-                                damping: 20
-                            }}
-                        >
-                            Royal dynasty homes architecture style is defined by strong, solid forms with urban design for academic success
-                        </motion.h1>
-                    </div>
-                </Container>
-            </div>
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
                 {slides.map((_, index) => (
                     <button
