@@ -26,9 +26,9 @@ export default function NavBar() {
                 <div className='flex justify-between md:items-center'>
                     <Link href={'/'}>
                         {isActive('') ? (
-                            <Image src={'/images/logo-white.svg'} width={186} height={80} className='w-[111px]' alt='Royal Dynasty Homes Logo' />
+                            <Image src={'/images/logo-white.svg'} width={186} height={80} alt='Royal Dynasty Homes Logo' />
                         ) : (
-                            <Image src={'/images/logo-blue.svg'} width={186} height={80} className='w-[111px]' alt='Royal Dynasty Homes Logo' />
+                            <Image src={'/images/logo-blue.svg'} width={186} height={80} alt='Royal Dynasty Homes Logo' />
                         )}
                     </Link>
                     <motion.ul className="flex flex-col space-x-1 md:space-x-8 md:flex-row">
