@@ -140,10 +140,7 @@ export default function BoardOfDirectors() {
                         During his professional career in the banking industry, he pioneered in 2007 and managed for two years at FCMB Ltd., the first indigenous world class central processing - shared services center in the Nigerian banking industry.                        <br />
                         <br />
                         <br />
-                        Known for his forthrightness yet inspiring style, Pa Kay as he is fondly called, is also a certified coach and an accomplished trainer and speaker, accredited by Dale Carnegie. He has a passion for empowering, and is deeply committed to creating environments where individuals can unlock their potential and succeed.
-
-                        At the heart of Pa Kay’s leadership are his core values of godliness, enterprise, and relationship. These principles guide his approach to business and life, ensuring that every decision is made with integrity and the desire to make a positive impact.
-                        He co-pioneered the globally recognized and acclaimed CIO and C Suite Awards and Club Africa project.
+                        Known for his forthrightness yet inspiring style, Pa Kay as he is fondly called, is also a certified coach and a Dale Carnegie accomplished trainer and speaker. He has a passion for empowering, and is deeply committed to creating environments where individuals can unlock their potential and succeed. At the heart of Pa Kay’s leadership are his core values of godliness, enterprise, and relationship. These principles guide his approach to business and life, ensuring that every decision is made with integrity and the desire to make a positive impact. He co-pioneered the globally recognized and acclaimed CIO and C Suite Awards and Club Africa project.
                     </p>
                 </div>
             </div>)
