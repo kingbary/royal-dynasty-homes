@@ -70,11 +70,11 @@ export default function BoardOfDirectors() {
             </div>)
         },
         {
-            name: 'Mr. Niyi Tanimola', position: 'Director/Legal Adviser.', imgUrl: '/images/board-of-directors/niyi-tanimola.webp',
+            name: 'Mr. Niyi Tanimola', position: 'Project Director', imgUrl: '/images/board-of-directors/niyi-tanimola.webp',
             bio: (<div className='pb-12'>
                 <div className='space-y-1'>
                     <h3 className='text-3xl font-medium uppercase'>MR. Niyi Tanimola</h3>
-                    <p className='text-[#000000B2] font-medium'>Director/Legal Adviser.</p>
+                    <p className='text-[#000000B2] font-medium'>Project Director</p>
                 </div>
                 <div className='mt-10'>
                     <p>Niyi is in full time professional consultancy
