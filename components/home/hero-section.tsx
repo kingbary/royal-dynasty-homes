@@ -63,7 +63,7 @@ export default function HeroSection() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                         >
-                            Royal Dynasty Homes Ltd
+                            The Royal Dynasty Homes Ltd
                         </motion.p>
                         <motion.p
                             initial={{ opacity: 0, y: -30 }}
