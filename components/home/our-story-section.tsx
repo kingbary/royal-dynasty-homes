@@ -9,7 +9,7 @@ export default function OurStorySection() {
 
     const partnershipAndApprovalContent = [
         {
-            name: 'Approved by',
+            name: 'Regulatory Bodies',
             content: [
                 {
                     institutionName: "PENCOM",
@@ -34,7 +34,7 @@ export default function OurStorySection() {
             ]
         },
         {
-            name: 'Regulatory Bodies',
+            name: 'Partners',
             content: [
                 {
                     institutionName: "UNILAG",
