@@ -4,6 +4,7 @@ import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
+import Link from 'next/link'
 
 type FormData = {
     fullName: string
@@ -54,9 +55,9 @@ export default function ContactUsSheet({ isOpen, onOpenChange }: { isOpen: boole
                 <div className="mb-8">
                     <h3 className="text-base font-[402] text-black">Get in Touch</h3>
                     <div className="space-y-2 text-base text-gray-600">
-                        <p><span className="font-[402]">Email:</span> contact@royaldynastyhomes.com</p>
+                        <p><span className="font-[402]">Email:</span><Link href="mailto:contact@royaldynastyhomes.com" className='hover:underline'> contact@royaldynastyhomes.com</Link></p>
                         <p><span className="font-[402]">Office Address:</span> 77, Oduduwa Way, Ikeja GRA Lagos.</p>
-                        <p><span className="font-[402]">Phone:</span> +234-806 757 2686</p>
+                        <p><span className="font-[402]">Phone:</span> <Link href="tel:+2348067572686" className='hover:underline'>+234-806 757 2686</Link>, <Link href="tel:+2348033071906" className='hover:underline'>+234-803 307 1906</Link></p>
                     </div>
                 </div>
 
