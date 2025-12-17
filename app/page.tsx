@@ -9,7 +9,7 @@ export const metadata = {
     description:
       "The Royal Dynasty Homes merge unwavering architectural integrity with refined urban planning.",
     url: "https://royaldynastyhomes.com/podcast",
-    siteName: "Cinnamon",
+    siteName: "The Royal Dynasty Homes Ltd.",
     images: [
       {
         url: "https://royaldynastyhomes.com/images/royal-dynasty-homes.png",
