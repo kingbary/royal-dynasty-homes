@@ -207,6 +207,31 @@ export default function BoardOfDirectors() {
                 </div>
             </div>)
         },
+        {
+            name: 'Emeka Chukwudum', position: 'HSE Manager', imgUrl: '/images/board-of-directors/emeka-chukwudum.webp',
+            bio: (<div className='pb-12'>
+                <div className='space-y-1'>
+                    <h3 className='text-3xl font-medium uppercase'>Emeka Chukwudum</h3>
+                    <p className='text-[#000000B2] font-medium'>HSE Manager</p>
+                </div>
+                <div className='mt-10'>
+                    <p>Emeka Chukwudum is a highly accomplished Health, Safety & Environment (HSE) professional with over 10 years of hands-
+                        on leadership experience in the construction and infrastructure sector. He has successfully designed,
+                        implemented, and managed world-class HSE systems for multiple high-risk projects, delivering millions of Lost
+                        Time Injury (LTI)-free man-hours, significant incident reductions, and sustained regulatory compliance across
+                        complex multi-site operations.
+                        <br />
+                        <br />
+                        A NEBOSH–certified safety specialist and trained ISO 14001/45001 auditor, he is widely recognized for his
+                        ability to translate HSE policy into measurable business value, ensuring protection of people, environment,
+                        assets, reputation, and project continuity. His expertise spans risk management, audits, incident investigation,
+                        contractor safety, training, fleet safety, and emergency preparedness. He brings a strong reputation for discipline,
+                        integrity, leadership, and data-driven decision-making, ensuring that safety becomes a measurable business
+                        advantage, not a regulatory burden.
+                    </p>
+                </div>
+            </div>)
+        },
     ]
     return (
         <div className='w-full flex flex-col gap-10 lg:flex-row justify-between mt-24'>
