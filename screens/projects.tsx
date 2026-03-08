@@ -2,15 +2,19 @@
 import Container from '@/components/universal/container'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { motion } from 'framer-motion'
 
 export default function ProjectsPage() {
   const projects = [
     {
+      projectName: 'GROUNDBREAKING EXECUTED BY: THE VICE CHANCELLOR PROFESSOR HAKEEM BABATUNDE FAWEHINMI',
+      images: ['/images/hero-bg.jpg', '/images/projects/uniabuja-proposed-img-2.webp'],
+      projectLink: '#',
+    },
+    {
       projectName: 'PROPOSED HOSTEL FOR UNIVERSITY OF ABUJA, FCT.',
       images: ['/images/projects/uniabuja-proposed-img.webp', '/images/projects/uniabuja-proposed-img-2.webp'],
-      projectLink: '/projects/uniabuja',
+      projectLink: '#',
     },
     {
       projectName: 'PROPOSED HOSTEL DEVELOPMENT FOR THE UNIVERSITY OF LAGOS, AKOKA.',
@@ -87,12 +91,14 @@ export default function ProjectsPage() {
                   viewport={{ once: true, amount: 0.3 }}
                   className='group flex items-center font-medium'>
                   <span className='opacity-0 group-hover:opacity-100 font-medium'>{'['}</span>
-                  <Link
-                    href={project.projectLink}
-                    className={`flex items-center gap-1 px-1 py-2.5 text-black`}
-                  >
-                    View Project
-                  </Link>
+                  {project.projectLink !== '#' && (
+                    <Link
+                      href={project.projectLink}
+                      className={`flex items-center gap-1 px-1 py-2.5 text-black`}
+                    >
+                      View Project
+                    </Link>
+                  )}
                   <span className='opacity-0 group-hover:opacity-100 font-medium'>{']'}</span>
                 </motion.span>
               </motion.div>

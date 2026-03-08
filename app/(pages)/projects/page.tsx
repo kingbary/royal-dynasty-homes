@@ -1,5 +1,4 @@
 import ProjectsPage from '@/screens/projects'
-import React from 'react'
 
 export const metadata = {
   title: "Projects | The Royal Dynasty Homes Ltd.",

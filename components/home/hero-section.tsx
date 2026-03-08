@@ -8,6 +8,10 @@ export default function HeroSection() {
 
     const slides = [
         {
+            image: "/images/hero-bg.png",
+            description: "GROUNDBREAKING EXECUTED BY: THE VICE CHANCELLOR PROFESSOR HAKEEM BABATUNDE FAWEHINMI"
+        },
+        {
             image: "/images/building-img.webp",
             description: "The Royal Dynasty Homes merge unwavering architectural integrity with refined urban planning."
         },
