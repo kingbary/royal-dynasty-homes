@@ -43,7 +43,7 @@ export default function ProjectsPage() {
     },
   ]
   return (
-    <div className='min-h-screen bg-white mt-[179px] font-normal mb-24'>
+    <div className='min-h-screen bg-white mt-[179px] font-normal mb-24 overflow-x-hidden'>
       <Container className='flex flex-col gap-[60px] md:gap-[120px]'>
         {projects.map((project, idx) => (
           <motion.div
