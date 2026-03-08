@@ -7,10 +7,10 @@ export default function HeroSection() {
     const [currentSlide, setCurrentSlide] = React.useState(0)
 
     const slides = [
-        {
-            image: "/images/hero-bg.png",
-            description: "GROUNDBREAKING EXECUTED BY: THE VICE CHANCELLOR PROFESSOR HAKEEM BABATUNDE FAWEHINMI"
-        },
+        // {
+        //     image: "/images/hero-bg.png",
+        //     description: "GROUNDBREAKING EXECUTED BY: THE VICE CHANCELLOR PROFESSOR HAKEEM BABATUNDE FAWEHINMI"
+        // },
         {
             image: "/images/building-img.webp",
             description: "The Royal Dynasty Homes merge unwavering architectural integrity with refined urban planning."
